@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @AdamyaWeb
+- 👀 I’m interested in Programing
+- 🌱 I’m currently learning Computer Science
