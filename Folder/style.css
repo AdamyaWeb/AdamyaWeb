@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body{
+	background: #0a1222;
+	color: #fff;
+}
+
+.navbar{
+	width: 100%;
+	height: 60px;
+	background: #090f1b;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 25px;
+}
+
+.navbar .inner_navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar .hamburger{
+	display: none;
+}
+
+.navbar .logo a{
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+span{
+	color: #5bd485;
+}
+
+.navbar .menu ul{
+	display: flex;
+}
+
+
+.navbar .menu ul li a{
+	width: 120px;
+	margin-right: 10px;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+.navbar .menu ul li:last-child a{
+	margin-right: 0;	
+}
+
+.navbar .menu ul li a:hover,
+.navbar .menu ul li a.active{
+	background: #5bd485;
+}
+
+ .header{
+	margin-top: 120px;
+	padding: 25px;
+}
+.header .heading h1{
+    font-size: 60px;
+}
+.header .text{
+    width: 650px;
+}
+.header .button button{
+    margin-top: 50px;
+}
+button{
+    padding: 50px;
+    padding-top: 15px;padding-left: 15px;
+    background: transparent;
+    border: 1px #fff solid;
+    cursor: pointer;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.7s;
+}
+.btn2{margin-left: 10px;}
+
+.btn1:hover{
+	background:#5bd485;
+	border: 1px #5bd485 solid; 
+	border-radius: 0px 20px 0px 20px;
+	color: #0a1222;
+}
+.btn2:hover{
+	background:#5bd485;
+	border: 1px #5bd485 solid; 
+	border-radius:20px 0px 20px 0px;
+	color: #0a1222;
+}
+.img1{
+	width: 600px;
+	height: 600px;
+	float: right;
+	margin-top: -470px;
+}
+.fa-cog{
+	animation: rotate 5s linear infinite;
+}
+.nut{
+	font-size: 150px;
+	margin-top: 50px;
+}
+.fa-s{
+	animation: rotate2 5s linear infinite;
+}
+.gada{
+	display: inline-flex;
+	display: none;
+}
+
+@keyframes rotate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate2{
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+	.navbar{
+		height: 100px;
+		padding: 12px;
+	}
+	.navbar .inner_navbar{
+		flex-direction: column;
+	}
+	.header .text{
+		width: 100%;
+	}
+	.header .heading h1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 60px;
+	}
+	.img1{
+		width: 500px;
+		height: 500px;
+		margin-top: -200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.gada{
+		display: block;
+		display: inline-flex;
+	}
+	.gada:last-child .fa-s{
+		margin-left: 19px;	
+	}
+}
+
+@media (max-width: 728px){
+	.navbar{
+		height: 60px;
+	}
+	.navbar .inner_navbar{
+		flex-direction: row;
+	}
+	.main_container{
+		margin-top: 60px;
+	}
+	.navbar .menu ul{
+		position: absolute;
+		top: 60px;
+		left: 0;
+		display: block;
+		background: #090f1b;
+		width: 100%;
+	}
+	.navbar .menu ul li{
+		padding: 10px;
+	}
+	.navbar .menu ul li a{
+		width: 100%;
+		padding: 12px;
+	}
+	.navbar .hamburger{
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 25px;
+		font-size: 24px;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+	.navbar .hamburger:hover{
+		color: #5bd485;
+	}
+	.navbar .menu{
+		display: none;
+	}
+	.navbar .menu.active{
+		display: block;
+	}
+	.main_container .content .item_wrap{
+		width: 100%;
+	}
+}
+
+::-webkit-scrollbar { width: 10px;}
+::-webkit-scrollbar-thumb {background: #5bd485;border-radius: 10px;}
+::-webkit-scrollbar {width: 10px;}
