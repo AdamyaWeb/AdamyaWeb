@@ -1,1 +1,1 @@
-Hi,🖐 there fellow programmer 🖥💻 I am Adamya but you can call me Andy 🧒🏻, I am 14 years old and i have been learning computer since 2019. I have learned the basics of web development like ( HTML,CSS,JS ) and a little bit of Python🐍🐍.
+May the force be with You
